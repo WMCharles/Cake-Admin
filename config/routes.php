@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Routes configuration.
  *
@@ -23,6 +24,7 @@
 
 use Cake\Routing\Route\DashedRoute;
 use Cake\Routing\RouteBuilder;
+use Cake\Routing\Router;
 
 return static function (RouteBuilder $routes) {
     /*
@@ -43,6 +45,12 @@ return static function (RouteBuilder $routes) {
      * `{action}` markers.
      */
     $routes->setRouteClass(DashedRoute::class);
+
+    // our routes
+
+    Router::prefix("admin", function (RouteBuilder $route) {
+        $route->connect("/", ['controller' => 'Dashboards', 'action' => 'index']);
+    });
 
     $routes->scope('/', function (RouteBuilder $builder) {
         /*
