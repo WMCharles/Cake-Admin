@@ -25,12 +25,12 @@ class CreateTbBranches extends AbstractMigration
         ]);
         $table->addColumn('name', 'string', [
             'default' => null,
-            'limit' => 255,
+            'limit' => 120,
             'null' => false,
         ]);
         $table->addColumn('description', 'text', [
             'default' => null,
-            'null' => false,
+            'null' => true,
         ]);
         $table->addColumn('college_id', 'integer', [
             'default' => null,
@@ -39,12 +39,12 @@ class CreateTbBranches extends AbstractMigration
         ]);
         $table->addColumn('start_date', 'string', [
             'default' => null,
-            'limit' => 255,
+            'limit' => 50,
             'null' => false,
         ]);
         $table->addColumn('end_date', 'string', [
             'default' => null,
-            'limit' => 255,
+            'limit' => 50,
             'null' => false,
         ]);
         $table->addColumn('total_seats', 'integer', [
@@ -54,20 +54,20 @@ class CreateTbBranches extends AbstractMigration
         ]);
         $table->addColumn('total_duration', 'integer', [
             'default' => null,
-            'limit' => 11,
+            'limit' => 5,
             'null' => false,
         ]);
         $table->addColumn('status', 'integer', [
-            'default' => null,
-            'limit' => 11,
+            'default' => 1,
+            'limit' => 5,
             'null' => false,
         ]);
         $table->addColumn('created_at', 'datetime', [
-            'default' => null,
+            'default' => 'CURRENT_TIMESTAMP',
             'null' => false,
         ]);
         $table->addColumn('modified_at', 'datetime', [
-            'default' => null,
+            'default' => 'CURRENT_TIMESTAMP',
             'null' => false,
         ]);
         $table->addPrimaryKey([
