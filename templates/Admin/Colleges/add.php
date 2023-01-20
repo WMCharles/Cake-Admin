@@ -3,6 +3,11 @@ if (!empty($title)) {
     $this->assign('title', $title);
 }
 ?>
+<style>
+    #form-add-college label.error {
+        color: red;
+    }
+</style>
 
 <section class="content-header">
     <div class="container-fluid">
@@ -34,14 +39,14 @@ if (!empty($title)) {
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Name</label>
-                                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name">
+                                        <label>Name*</label>
+                                        <input type="text" required name="name" id="name" class="form-control" placeholder="Enter Name">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Short Name</label>
-                                        <input type="text" name="short_name" id="short_name" class="form-control" placeholder="Enter Short Name">
+                                        <label>Short Name*</label>
+                                        <input type="text" required name="short_name" id="short_name" class="form-control" placeholder="Enter Short Name">
                                     </div>
                                 </div>
                             </div>
@@ -54,38 +59,38 @@ if (!empty($title)) {
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Location</label>
-                                        <textarea name="location" id="location" class="form-control" placeholder="Enter location"></textarea>
+                                        <label>Location*</label>
+                                        <textarea name="location" required id="location" class="form-control" placeholder="Enter location"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Total Faculty</label>
-                                        <input type="number" min="10" name="total_faculty" id="total_faculty" class="form-control" placeholder="Enter total_faculty">
+                                        <label>Total Faculty*</label>
+                                        <input type="number" min="10" required name="total_faculty" id="total_faculty" class="form-control" placeholder="Enter Total Faculty">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Contact Number</label>
-                                        <input type="text" name="contact_number" id="contact_number" class="form-control" placeholder="Enter Contact Number">
+                                        <label>Contact Number*</label>
+                                        <input type="text" required name="contact_number" id="contact_number" class="form-control" placeholder="Enter Contact Number">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Email</label>
-                                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter email">
+                                        <label>Email*</label>
+                                        <input type="email" required name="email" id="email" class="form-control" placeholder="Enter Email">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label for="exampleInputFile">Cover Image</label>
+                                        <label for="exampleInputFile">Cover Image*</label>
                                         <div class="input-group">
                                             <div class="custom-file">
-                                                <input type="file" name="cover_image" id="cover_image" class="custom-file-input form-control">
+                                                <input type="file" required name="cover_image" id="cover_image" class="custom-file-input form-control">
                                                 <label class="custom-file-label" for="exampleInputFile">Upload image</label>
                                             </div>
                                             <div class="input-group-append">
@@ -99,8 +104,8 @@ if (!empty($title)) {
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Status</label>
-                                        <select name="status" id="status" class="form-control">
+                                        <label>Status*</label>
+                                        <select name="status" id="status" class="form-control" required>
                                             <option value="1">Active</option>
                                             <option value="0">Inactive</option>
                                         </select>
@@ -122,3 +127,13 @@ if (!empty($title)) {
         </div>
     </div>
 </section>
+
+<?= $this->Html->script([
+    "jquery.validate.min.js"
+], ["block" => "bottomScriptLinks"]) ?>
+
+<?php
+    $this->Html->scriptStart(["block" => true]);
+    echo '$("#form-add-college").validate();';
+    $this->Html->scriptEnd();
+?>
