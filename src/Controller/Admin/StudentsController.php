@@ -9,6 +9,7 @@ class StudentsController extends AppController
     public function initialize(): void
     {
         parent::initialize();
+        $this->viewBuilder()->setLayout('admin');
     }
 
     public function index()
