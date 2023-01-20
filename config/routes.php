@@ -76,7 +76,7 @@ return static function (RouteBuilder $routes) {
         $route->connect("/delete-staff/:id", ['controller' => 'Staffs', 'action' => 'delete'], ['pass' => ['id']]);
 
         // reports
-        $route->connect("/students-report", ['controller' => 'Reports', 'action' => 'studentReport']);
+        $route->connect("/students-report", ['controller' => 'Reports', 'action' => 'studentsReport']);
         $route->connect("/staffs-report", ['controller' => 'Reports', 'action' => 'staffsReport']);
         $route->connect("/colleges-report", ['controller' => 'Reports', 'action' => 'collegesReport']);
     });

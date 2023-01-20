@@ -10,4 +10,16 @@ class ReportsController extends AppController
     {
         parent::initialize();
     }
+
+    public function studentsReport(){
+
+    }
+
+    public function staffsReport(){
+        
+    }
+
+    public function collegesReport(){
+        
+    }
 }
