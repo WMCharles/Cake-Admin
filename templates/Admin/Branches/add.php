@@ -9,6 +9,10 @@ if (!empty($title)) {
     }
 </style>
 
+<?= 
+ $this->Html->css(["pickmeup.css"], ["block" => "TopStyleLinks"])
+?>
+
 <section class="content-header">
     <div class="container-fluid">
         <div class="row mb-2">
@@ -59,7 +63,7 @@ if (!empty($title)) {
                                 <div class="col-sm-6">
                                     <div class="form-group">
                                         <label>Session Start Date*</label>
-                                        <input type="text" min="10" required name="start_date" id="start_date" class="form-control" placeholder="Enter Start Date">
+                                        <input type="text" required name="start_date" id="start_date" class="form-control" placeholder="Enter Start Date">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -101,7 +105,7 @@ if (!empty($title)) {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -118,11 +122,14 @@ if (!empty($title)) {
 </section>
 
 <?= $this->Html->script([
-    "jquery.validate.min.js"
+    "jquery.validate.min.js",
+    "pickmeup.js"
 ], ["block" => "bottomScriptLinks"]) ?>
 
 <?php
 $this->Html->scriptStart(["block" => true]);
-echo '$("#form-add-branch").validate();';
+    echo '$("#form-add-branch").validate();';
+    echo 'pickmeup("input#start_date", {hide_on_select: true});';
+    echo 'pickmeup("input#end_date", {hide_on_select: true});';
 $this->Html->scriptEnd();
 ?>
