@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
         <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Botwa Farm</span>
+        <span class="brand-text font-weight-light">AgriAI College</span>
     </a>
 
     <!-- Sidebar -->
@@ -34,7 +34,7 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Dashboard -->
                 <li class="nav-item">
-                    <a href="pages/charts/flot.html" class="nav-link">
+                    <a href="<?= $this->Url->build('/admin', ['fullBase' => true])?>" class="nav-link">
                         <i class="fa fa-tachometer nav-icon"></i>
                         <p>Dashboards</p>
                     </a>
@@ -50,13 +50,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/add-college', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add College</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/list-colleges', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>List College</p>
                             </a>
@@ -74,13 +74,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/add-branch', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Branch</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/list-branches', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>List Branch</p>
                             </a>
@@ -98,13 +98,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/add-staff', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Staff</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/list-staffs', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>List Staff</p>
                             </a>
@@ -122,13 +122,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/add-student', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Students</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/list-students', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>List Students</p>
                             </a>
@@ -146,19 +146,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/colleges-report', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Colleges Report</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/charts/chartjs.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/students-report', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Students Report</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/charts/flot.html" class="nav-link">
+                            <a href="<?= $this->Url->build('/admin/staffs-report', ['fullBase' => true])?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Staff Report</p>
                             </a>
