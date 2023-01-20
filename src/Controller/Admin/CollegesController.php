@@ -14,14 +14,17 @@ class CollegesController extends AppController
 
     public function index()
     {
+        $this->set("title", "Colleges | Academics Management");
     }
 
     public function add()
     {
+        $this->set("title", "Add College | Academics Management");
     }
 
     public function edit($id = null)
     {
+        $this->set("title", "Edit College | Academics Management");
     }
 
 

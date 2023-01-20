@@ -12,15 +12,18 @@ class ReportsController extends AppController
         $this->viewBuilder()->setLayout('admin');
     }
 
-    public function studentsReport(){
-
+    public function studentsReport()
+    {
+        $this->set("title", "Students Report | Academics Management");
     }
 
-    public function staffsReport(){
-        
+    public function staffsReport()
+    {
+        $this->set("title", "Staffs Report | Academics Management");
     }
 
-    public function collegesReport(){
-        
+    public function collegesReport()
+    {
+        $this->set("title", "Colleges Report | Academics Management");
     }
 }

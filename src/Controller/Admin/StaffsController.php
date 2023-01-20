@@ -14,14 +14,20 @@ class StaffsController extends AppController
 
     public function index()
     {
+        $this->set("title", "List Staff | Academics Management");
+
     }
 
     public function add()
     {
+        $this->set("title", "Add Staff | Academics Management");
+
     }
 
     public function edit($id = null)
     {
+        $this->set("title", "Edit Staff | Academics Management");
+
     }
 
 

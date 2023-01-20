@@ -14,5 +14,6 @@ class DashboardsController extends AppController
 
     public function index()
     {
+        $this->set("title", "Dashboard | Academics Management");
     }
 }

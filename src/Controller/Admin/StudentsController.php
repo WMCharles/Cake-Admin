@@ -14,14 +14,17 @@ class StudentsController extends AppController
 
     public function index()
     {
+        $this->set("title", "List Students | Academics Management");
     }
 
     public function add()
     {
+        $this->set("title", "Add Student | Academics Management");
     }
 
     public function edit($id = null)
     {
+        $this->set("title", "Edit Student | Academics Management");
     }
 
 
