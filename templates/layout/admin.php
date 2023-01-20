@@ -84,6 +84,9 @@
 
     ])
     ?>
+
+    <?= $this->fetch("bottomScriptLinks") ?>
+    <?= $this->fetch("script") ?>
     <script>
         $.widget.bridge('uibutton', $.ui.button)
     </script>
