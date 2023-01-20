@@ -32,15 +32,17 @@
         <!-- Sidebar Menu -->
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Dashboard -->
                 <li class="nav-item">
                     <a href="pages/charts/flot.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
+                        <i class="fa fa-tachometer nav-icon"></i>
                         <p>Dashboards</p>
                     </a>
                 </li>
+                <!-- College -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-university"></i>
                         <p>
                             Manage College
                             <i class="right fas fa-angle-left"></i>
@@ -61,9 +63,10 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Branch -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-list-ul"></i>
                         <p>
                             Manage Branch
                             <i class="right fas fa-angle-left"></i>
@@ -84,9 +87,10 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Staff -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-users"></i>
                         <p>
                             Manage Staff
                             <i class="right fas fa-angle-left"></i>
@@ -107,11 +111,12 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Student -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-chart-pie"></i>
+                        <i class="nav-icon fas fa-graduation-cap"></i>
                         <p>
-                            Manage Students
+                            Manage Student
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -130,15 +135,41 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Reports -->
                 <li class="nav-item">
-                    <a href="pages/charts/flot.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Reports</p>
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        <p>
+                            Reports
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
                     </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="pages/charts/chartjs.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Colleges Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/charts/chartjs.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Students Report</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/charts/flot.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Staff Report</p>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
+
+                <!-- Logout -->
                 <li class="nav-item">
                     <a href="pages/charts/flot.html" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
+                        <i class="fa fa-sign-out-alt"></i>
                         <p>Logout</p>
                     </a>
                 </li>
