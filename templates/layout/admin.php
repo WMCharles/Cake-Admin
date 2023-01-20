@@ -30,20 +30,26 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+            <?= $this->Html->image('/dist/img/AdminLTELogo.png', [
+                'class' => "animation__shake",
+                'alt' => "AdminLTELogo",
+                'height' => "60",
+                'width' => "60"
+            ]) ?>
+            <!-- <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60"> -->
         </div>
         <!-- top nav -->
-        <?=$this->element('top-nav') ?>
+        <?= $this->element('top-nav') ?>
         <!-- Main Sidebar Container -->
         <?= $this->element('side-bar') ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-           <?= $this->fetch('content')?>
+            <?= $this->fetch('content') ?>
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; <?php echo date ('Y') ?> <a href="#">Botwa Farm</a>.</strong>
+            <strong>Copyright &copy; <?php echo date('Y') ?> <a href="#">Botwa Farm</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 3.2.0
