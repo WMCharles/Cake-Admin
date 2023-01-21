@@ -46,6 +46,7 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
+            <?= $this->Flash->render() ?>
             <?= $this->fetch('content') ?>
         </div>
         <!-- /.content-wrapper -->
