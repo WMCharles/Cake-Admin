@@ -80,7 +80,6 @@
         "/plugins/summernote/summernote-bs4.min.js",
         "/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js",
         "/dist/js/adminlte.js",
-        "/dist/js/pages/dashboard.js"
     ])
     ?>
 
