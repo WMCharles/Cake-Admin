@@ -23,7 +23,7 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <script src="https://kit.fontawesome.com/30af3041d5.js" crossorigin="anonymous"></script>
-    <?= $this->fetch("TopStyleLinks")?>
+    <?= $this->fetch("TopStyleLinks") ?>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -80,9 +80,7 @@
         "/plugins/summernote/summernote-bs4.min.js",
         "/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js",
         "/dist/js/adminlte.js",
-        "/dist/js/pages/dashboard.js",
-        "/dist/js/demo.js"
-
+        "/dist/js/pages/dashboard.js"
     ])
     ?>
 
